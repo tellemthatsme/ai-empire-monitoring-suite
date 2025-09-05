@@ -1,0 +1,348 @@
+{
+  "agents": {
+    "REVENUE_ORCHESTRATOR": {
+      "role": "Master revenue coordination and optimization",
+      "model": "meta-llama/llama-3.3-70b-instruct:free",
+      "capabilities": [
+        "multi_channel_coordination",
+        "dynamic_pricing",
+        "conversion_optimization",
+        "pipeline_management",
+        "predictive_analytics"
+      ],
+      "tools": [
+        "advanced_lead_generator",
+        "dynamic_proposal_writer",
+        "ai_pricing_optimizer",
+        "multi_channel_communicator",
+        "predictive_revenue_modeler",
+        "conversion_funnel_optimizer"
+      ],
+      "sub_agents": [
+        "lead_qualification_specialist",
+        "proposal_optimization_expert",
+        "pricing_strategy_analyst",
+        "client_relationship_manager"
+      ],
+      "status": "AgentStatus.IDLE",
+      "performance": "AgentPerformance(tasks_completed=0, success_rate=1.0, avg_response_time=0.0, revenue_generated=0.0, efficiency_score=1.0, last_active=None)",
+      "specializations": [
+        "enterprise_sales",
+        "saas_scaling",
+        "revenue_optimization"
+      ]
+    },
+    "COORDINATION_COMMANDER": {
+      "role": "Inter-agent coordination and task orchestration master",
+      "model": "qwen/qwen3-coder:free",
+      "capabilities": [
+        "task_distribution",
+        "agent_coordination",
+        "workflow_optimization",
+        "resource_allocation",
+        "conflict_resolution"
+      ],
+      "tools": [
+        "intelligent_task_router",
+        "agent_performance_monitor",
+        "workflow_optimizer",
+        "resource_allocator",
+        "coordination_analytics",
+        "bottleneck_resolver"
+      ],
+      "sub_agents": [
+        "task_prioritization_specialist",
+        "resource_optimization_expert",
+        "workflow_efficiency_analyst",
+        "coordination_intelligence_manager"
+      ],
+      "status": "AgentStatus.IDLE",
+      "performance": "AgentPerformance(tasks_completed=0, success_rate=1.0, avg_response_time=0.0, revenue_generated=0.0, efficiency_score=1.0, last_active=None)",
+      "specializations": [
+        "task_orchestration",
+        "agent_coordination",
+        "workflow_optimization"
+      ]
+    },
+    "ANALYTICS_INTELLIGENCE": {
+      "role": "Advanced analytics and business intelligence orchestrator",
+      "model": "deepseek/deepseek-r1:free",
+      "capabilities": [
+        "predictive_modeling",
+        "revenue_forecasting",
+        "market_analysis",
+        "performance_optimization",
+        "competitive_intelligence"
+      ],
+      "tools": [
+        "predictive_analytics_engine",
+        "revenue_forecasting_model",
+        "market_intelligence_analyzer",
+        "performance_prediction_system",
+        "competitive_analysis_framework",
+        "business_intelligence_dashboard"
+      ],
+      "sub_agents": [
+        "predictive_modeling_specialist",
+        "market_research_analyst",
+        "performance_optimization_expert",
+        "competitive_intelligence_officer"
+      ],
+      "status": "AgentStatus.IDLE",
+      "performance": "AgentPerformance(tasks_completed=0, success_rate=1.0, avg_response_time=0.0, revenue_generated=0.0, efficiency_score=1.0, last_active=None)",
+      "specializations": [
+        "predictive_analytics",
+        "business_intelligence",
+        "market_analysis"
+      ]
+    },
+    "AUTOMATION_ARCHITECT": {
+      "role": "Advanced automation design and deployment specialist",
+      "model": "microsoft/mai-ds-r1:free",
+      "capabilities": [
+        "process_automation",
+        "workflow_design",
+        "system_integration",
+        "efficiency_optimization",
+        "scalability_planning"
+      ],
+      "tools": [
+        "advanced_process_automator",
+        "intelligent_workflow_designer",
+        "system_integration_manager",
+        "efficiency_optimization_engine",
+        "scalability_planning_system",
+        "automation_performance_monitor"
+      ],
+      "sub_agents": [
+        "process_optimization_specialist",
+        "workflow_automation_expert",
+        "integration_architecture_analyst",
+        "scalability_engineering_manager"
+      ],
+      "status": "AgentStatus.IDLE",
+      "performance": "AgentPerformance(tasks_completed=0, success_rate=1.0, avg_response_time=0.0, revenue_generated=0.0, efficiency_score=1.0, last_active=None)",
+      "specializations": [
+        "process_automation",
+        "workflow_optimization",
+        "system_integration"
+      ]
+    },
+    "CLIENT_RELATIONSHIP_MASTER": {
+      "role": "Advanced client relationship and satisfaction optimization",
+      "model": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "capabilities": [
+        "client_engagement",
+        "relationship_optimization",
+        "satisfaction_prediction",
+        "retention_management",
+        "upsell_coordination"
+      ],
+      "tools": [
+        "advanced_client_profiler",
+        "relationship_optimization_engine",
+        "satisfaction_prediction_model",
+        "retention_strategy_optimizer",
+        "intelligent_upsell_coordinator",
+        "client_journey_optimizer"
+      ],
+      "sub_agents": [
+        "client_engagement_specialist",
+        "relationship_strategy_analyst",
+        "satisfaction_optimization_expert",
+        "retention_coordination_manager"
+      ],
+      "status": "AgentStatus.IDLE",
+      "performance": "AgentPerformance(tasks_completed=0, success_rate=1.0, avg_response_time=0.0, revenue_generated=0.0, efficiency_score=1.0, last_active=None)",
+      "specializations": [
+        "client_relationships",
+        "customer_success",
+        "retention_optimization"
+      ]
+    }
+  },
+  "framework": {
+    "pipeline_stages": {
+      "lead_generation": {
+        "automation_level": "full",
+        "target_leads_daily": 100,
+        "qualification_rate": 0.25,
+        "tools": [
+          "ai_lead_finder",
+          "qualification_bot",
+          "enrichment_engine"
+        ],
+        "optimization_metrics": [
+          "lead_quality",
+          "conversion_rate",
+          "cost_per_lead"
+        ]
+      },
+      "qualification": {
+        "automation_level": "ai_assisted",
+        "qualification_criteria": {
+          "budget_threshold": 5000,
+          "timeline_urgency": "high",
+          "decision_authority": "confirmed",
+          "fit_score": 0.7
+        },
+        "tools": [
+          "ai_qualifier",
+          "needs_analyzer",
+          "fit_scorer"
+        ],
+        "optimization_metrics": [
+          "qualification_accuracy",
+          "time_to_qualify",
+          "false_positive_rate"
+        ]
+      },
+      "proposal": {
+        "automation_level": "ai_generated",
+        "customization_depth": "deep",
+        "pricing_strategy": "dynamic",
+        "tools": [
+          "proposal_generator",
+          "pricing_optimizer",
+          "customization_engine"
+        ],
+        "optimization_metrics": [
+          "proposal_acceptance_rate",
+          "time_to_proposal",
+          "pricing_optimization"
+        ]
+      },
+      "negotiation": {
+        "automation_level": "ai_assisted",
+        "strategy": "value_maximization",
+        "tools": [
+          "negotiation_assistant",
+          "objection_handler",
+          "value_communicator"
+        ],
+        "optimization_metrics": [
+          "deal_value",
+          "negotiation_success_rate",
+          "time_to_close"
+        ]
+      },
+      "closing": {
+        "automation_level": "ai_assisted",
+        "follow_up_strategy": "intelligent_persistence",
+        "tools": [
+          "closing_assistant",
+          "contract_generator",
+          "signature_tracker"
+        ],
+        "optimization_metrics": [
+          "close_rate",
+          "time_to_signature",
+          "contract_accuracy"
+        ]
+      },
+      "delivery": {
+        "automation_level": "full",
+        "quality_assurance": "ai_validated",
+        "tools": [
+          "delivery_automator",
+          "quality_checker",
+          "client_updater"
+        ],
+        "optimization_metrics": [
+          "delivery_time",
+          "quality_score",
+          "client_satisfaction"
+        ]
+      },
+      "upsell": {
+        "automation_level": "ai_driven",
+        "timing_optimization": "predictive",
+        "tools": [
+          "upsell_identifier",
+          "timing_optimizer",
+          "value_proposer"
+        ],
+        "optimization_metrics": [
+          "upsell_rate",
+          "additional_revenue",
+          "client_lifetime_value"
+        ]
+      }
+    },
+    "automation_workflows": {
+      "daily_pipeline_optimization": {
+        "trigger": "daily_schedule",
+        "actions": [
+          "analyze_pipeline_performance",
+          "optimize_conversion_rates",
+          "adjust_pricing_strategies",
+          "reallocate_resources",
+          "update_forecasts"
+        ]
+      },
+      "lead_nurturing_sequence": {
+        "trigger": "new_lead",
+        "actions": [
+          "profile_lead",
+          "assign_nurturing_track",
+          "schedule_touchpoints",
+          "track_engagement",
+          "optimize_messaging"
+        ]
+      },
+      "performance_optimization": {
+        "trigger": "hourly_schedule",
+        "actions": [
+          "monitor_agent_performance",
+          "optimize_task_distribution",
+          "adjust_orchestration_rules",
+          "update_success_metrics"
+        ]
+      }
+    },
+    "intelligence_systems": {
+      "predictive_revenue_modeling": {
+        "model_type": "ensemble",
+        "prediction_horizon": "90_days",
+        "accuracy_target": 0.92,
+        "features": [
+          "historical_performance",
+          "market_conditions",
+          "agent_performance",
+          "seasonal_patterns",
+          "competitive_landscape"
+        ]
+      },
+      "dynamic_pricing_optimization": {
+        "strategy": "value_based",
+        "adjustment_frequency": "real_time",
+        "factors": [
+          "client_profile",
+          "market_demand",
+          "competitive_pricing",
+          "delivery_capacity",
+          "strategic_importance"
+        ]
+      },
+      "client_lifetime_value_optimization": {
+        "prediction_model": "deep_learning",
+        "optimization_strategy": "long_term_value",
+        "factors": [
+          "engagement_patterns",
+          "satisfaction_scores",
+          "upsell_potential",
+          "retention_probability",
+          "referral_likelihood"
+        ]
+      }
+    }
+  },
+  "orchestration_rules": {
+    "max_concurrent_tasks_per_agent": 3,
+    "task_timeout_minutes": 120,
+    "priority_escalation_threshold": 30,
+    "agent_rotation_interval": 300,
+    "performance_evaluation_interval": 60,
+    "revenue_optimization_interval": 15
+  }
+}

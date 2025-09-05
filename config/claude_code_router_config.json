@@ -1,0 +1,203 @@
+{
+  "version": "2.0.0",
+  "name": "Claude Code Router Enhanced",
+  "description": "Intelligent routing system for Claude and OpenRouter models",
+  "last_updated": "2025-08-27T00:00:00Z",
+  
+  "system_settings": {
+    "daily_budget": 500.0,
+    "emergency_budget": 50.0,
+    "cost_optimization": true,
+    "intelligent_routing": true,
+    "auto_model_selection": true,
+    "performance_monitoring": true,
+    "usage_analytics": true
+  },
+  
+  "routing_tiers": {
+    "tier_1_revenue_critical": {
+      "priority": 1,
+      "description": "Revenue-generating applications and critical business logic",
+      "models": [
+        {
+          "name": "anthropic/claude-3.5-sonnet",
+          "provider": "openrouter",
+          "cost_per_token": 0.000003,
+          "max_tokens": 200000,
+          "quality_score": 95,
+          "speed_score": 85
+        },
+        {
+          "name": "anthropic/claude-3-opus",
+          "provider": "openrouter", 
+          "cost_per_token": 0.000015,
+          "max_tokens": 200000,
+          "quality_score": 98,
+          "speed_score": 75
+        }
+      ],
+      "repositories": [
+        "crypto-beacon-trader-hub",
+        "firecrawl",
+        "ai-command-center-nexus-22",
+        "deepwiki-open",
+        "payment-processing",
+        "revenue-generation-engine"
+      ],
+      "task_types": [
+        "payment_processing",
+        "security_critical",
+        "revenue_optimization",
+        "production_deployment"
+      ]
+    },
+    
+    "tier_2_important_development": {
+      "priority": 2,
+      "description": "Important development tasks and AI tool enhancement",
+      "models": [
+        {
+          "name": "anthropic/claude-3-haiku",
+          "provider": "openrouter",
+          "cost_per_token": 0.00000025,
+          "max_tokens": 200000,
+          "quality_score": 85,
+          "speed_score": 95
+        },
+        {
+          "name": "anthropic/claude-3-sonnet",
+          "provider": "openrouter",
+          "cost_per_token": 0.000003,
+          "max_tokens": 200000,
+          "quality_score": 90,
+          "speed_score": 80
+        }
+      ],
+      "repositories": [
+        "context7",
+        "claude-conductor",
+        "superclaude",
+        "claudia",
+        "eliza",
+        "mcp-.*",
+        "ai-.*"
+      ],
+      "task_types": [
+        "code_review",
+        "testing",
+        "development",
+        "debugging",
+        "optimization"
+      ]
+    },
+    
+    "tier_3_bulk_operations": {
+      "priority": 3,
+      "description": "Bulk operations, documentation, and simple tasks",
+      "models": [
+        {
+          "name": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "openrouter",
+          "cost_per_token": 0.0000003,
+          "max_tokens": 128000,
+          "quality_score": 75,
+          "speed_score": 90
+        },
+        {
+          "name": "qwen/qwen-2.5-coder-32b-instruct:free",
+          "provider": "openrouter",
+          "cost_per_token": 0.0,
+          "max_tokens": 32000,
+          "quality_score": 80,
+          "speed_score": 85
+        }
+      ],
+      "repositories": [
+        "documentation",
+        "examples",
+        "templates",
+        ".*-templates",
+        ".*docs.*"
+      ],
+      "task_types": [
+        "documentation",
+        "cleanup",
+        "simple_tasks",
+        "bulk_processing",
+        "formatting"
+      ]
+    },
+    
+    "tier_4_experimental": {
+      "priority": 4,
+      "description": "Experimental tasks and local model testing",
+      "models": [
+        {
+          "name": "local/codellama-7b",
+          "provider": "local",
+          "cost_per_token": 0.0,
+          "max_tokens": 16000,
+          "quality_score": 65,
+          "speed_score": 100
+        },
+        {
+          "name": "z-ai/glm-4.5-air:free",
+          "provider": "openrouter",
+          "cost_per_token": 0.0,
+          "max_tokens": 8000,
+          "quality_score": 70,
+          "speed_score": 95
+        }
+      ],
+      "repositories": [
+        "experimental",
+        "test",
+        "sandbox",
+        ".*-test.*"
+      ],
+      "task_types": [
+        "testing",
+        "experimentation",
+        "prototyping",
+        "learning"
+      ]
+    }
+  },
+  
+  "intelligent_routing_rules": {
+    "cost_threshold_emergency": 450.0,
+    "cost_threshold_warning": 400.0,
+    "performance_degradation_threshold": 0.7,
+    "auto_downgrade_on_budget": true,
+    "auto_upgrade_on_performance": false,
+    "model_selection_algorithm": "cost_performance_balanced",
+    "context_awareness": true,
+    "learning_enabled": true
+  },
+  
+  "monitoring_settings": {
+    "track_usage": true,
+    "track_performance": true,
+    "track_costs": true,
+    "track_errors": true,
+    "generate_reports": true,
+    "alert_on_budget_exceed": true,
+    "alert_on_performance_degrade": true,
+    "metrics_retention_days": 90
+  },
+  
+  "api_endpoints": {
+    "claude_router_api": "http://localhost:8080",
+    "openrouter_api": "https://openrouter.ai/api/v1",
+    "local_model_api": "http://localhost:11434/v1",
+    "analytics_api": "http://localhost:8183"
+  },
+  
+  "security_settings": {
+    "api_key_rotation": false,
+    "rate_limiting": true,
+    "request_logging": true,
+    "secure_storage": true,
+    "audit_trail": true
+  }
+}
